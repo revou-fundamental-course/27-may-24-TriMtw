@@ -3,13 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projek Tugas Tri_mtw</title>
+    <title>Projek Kursus Koding</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <nav>
-        <div class="logo.icon">
-            
-        </div>
+        <div class="logo-icon"></div>
+        <section>
+            <a class="nav-item" href="#home">Home</a>
+            <a class="nav-item" href="#fasilities">Our Facilities</a>
+            <a class="nav-item" href="#message">Message</a>
+        </section>
     </nav>
+
+    <hr>
+
+    <section id="home">
+        <header>
+            <h1 id="welcomeMessage">Hai Tri_Mtw, Welcome To My Website</h1>
+        </header>
+        <article>
+            <p>Ini adalah website latihan pertama</p>
+            <div class="banner-container"></div>
+        </article>
+    </section>
+
+    <hr>
+
+    <section id="fasilities">
+        <header>
+            <h1>Our Facilities</h1>
+        </header>
+        <article class="facility-list">
+            <div>
+                <div class="circle"></div>
+                <h5>Professional Teacher</h5>
+            </div>
+            <div>
+                <div class="circle"></div>
+                <h5>Sport Field</h5>
+            </div>
+            <div>
+                <div class="circle"></div>
+                <h5>Classroom</h5>
+            </div>
+        </article>
+    </section>
+
+    <hr>
+
+    <section id="message">
+        <header>
+            <h1>Message Us</h1>
+        </header>
+        <section class="message-us-section">
+            <!-- Form -->
+            <form id="messageForm">
+                <label for="name">Nama :</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="dob">Tanggal Lahir :</label>
+                <input type="date" id="dob" name="dob" required>
+                
+                <label>Jenis Kelamin :</label>
+                <div class="gender-options">
+                    <input type="radio" id="male" name="gender" value="Laki-laki" required>
+                    <label for="male">Laki-laki</label>
+                    <input type="radio" id="female" name="gender" value="Perempuan" required>
+                    <label for="female">Perempuan</label>
+                </div>
+                
+                <label for="role">Peran :</label>
+                <input type="text" id="role" name="role" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+
+            <!-- Result -->
+            <div class="form-result" id="formResult">
+                <p>Current time: <span id="currentTime"></span></p>
+                <p>Name: <span id="resultName"></span></p>
+                <p>Tanggal Lahir: <span id="resultDob"></span></p>
+                <p>Jenis Kelamin: <span id="resultGender"></span></p>
+                <p>Peran: <span id="resultRole"></span></p>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <p>©Tri_Mtw</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
 </body>
 </html>
